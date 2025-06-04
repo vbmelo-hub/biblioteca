@@ -6,8 +6,8 @@ public class Emprestimo {
     private Livro livro;
     private Usuario usuario;
     private LocalDate dataEmprestimo;
-    private LocalDate dataDevolucaoPrevista; // Data que o livro deveria ser devolvido
-    private LocalDate dataDevolucaoReal; // Data real da devolução (pode ser null se não devolvido)
+    private LocalDate dataDevolucaoPrevista;
+    private LocalDate dataDevolucaoReal;
 
     // Construtor
     public Emprestimo(Livro livro, Usuario usuario, LocalDate dataEmprestimo, LocalDate dataDevolucaoPrevista) {
