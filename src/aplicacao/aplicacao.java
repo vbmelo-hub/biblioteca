@@ -228,7 +228,7 @@ public class Aplicacao {
             }
         } while (subOpcao != 0);
     }
-
+    // Testando github
     private static void printMenuEmprestimos() {
         String menu = "\n--- GERENCIAMENTO DE EMPRÉSTIMOS ---\n";
         menu = menu + "1 - Realizar empréstimo\n";
