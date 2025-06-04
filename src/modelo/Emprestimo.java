@@ -15,7 +15,7 @@ public class Emprestimo {
         this.usuario = usuario;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucaoPrevista = dataDevolucaoPrevista;
-        this.dataDevolucaoReal = null; // Inicialmente nulo
+        this.dataDevolucaoReal = null;
     }
 
     // Getters
