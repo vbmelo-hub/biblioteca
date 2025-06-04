@@ -1,6 +1,6 @@
 package modelo;
 
-import java.time.LocalDate; // Necessário para LocalDate
+import java.time.LocalDate; 
 
 public class Emprestimo {
     private Livro livro;
