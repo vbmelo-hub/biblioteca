@@ -33,8 +33,8 @@ public class Usuario {
     // Relatório
     public String toString() 
     {
-        return "Nome: " + nome +
-               "\nCPF: " + cpf +
-               "\nE-mail: " + email;
+        return "🧍 Nome: " + nome 
+               + "\n🧍 CPF: " + cpf 
+               + "\n🧍 E-mail: " + email;
     }
 }

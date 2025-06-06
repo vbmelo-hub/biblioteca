@@ -11,7 +11,7 @@ public class Livro {
 
     
     
-    // Construtores
+    // Construtor
     public Livro(String titulo, String autor, String isbn, int anoPublicacao, String editora, int quantidadeExemplares) 
     {
         this.titulo = titulo;
@@ -64,15 +64,17 @@ public class Livro {
         this.exemplaresDisponiveis++;
     }
 
+    
+    
     // Relatório
     public String toString() 
     {
-        return "Título: " + titulo +
-               "\nAutor: " + autor +
-               "\nISBN: " + isbn +
-               "\nAno: " + anoPublicacao +
-               "\nEditora: " + editora +
-               "\nTotal de exemplares: " + quantidadeExemplares +
-               "\nExemplares disponíveis: " + exemplaresDisponiveis;
+        return "\n🕮 Título: " + titulo 
+               + "\n🕮 Autor: " + autor 
+               + "\n🕮 ISBN: " + isbn 
+               + "\n🕮 Ano: " + anoPublicacao 
+               + "\n🕮 Editora: " + editora 
+               + "\n🕮 Total de exemplares: " + quantidadeExemplares 
+               + "\n🕮 Exemplares disponíveis: " + exemplaresDisponiveis;
     }
 }

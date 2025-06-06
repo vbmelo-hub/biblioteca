@@ -60,12 +60,12 @@ public class Emprestimo {
     // Relatório
     public String toString() 
     {
-        String statusDevolucao = (dataDevolucaoReal == null) ? "Empréstimo Ativo" : "Devolvido em " + dataDevolucaoReal;
-        return "--- Detalhes do Empréstimo ---\n" +
-               "Livro: " + livro.getTitulo() + " (ISBN: " + livro.getIsbn() + ")\n" +
-               "Usuário: " + usuario.getNome() + " (CPF: " + usuario.getCpf() + ")\n" +
-               "Data do Empréstimo: " + dataEmprestimo + "\n" +
-               "Data de Devolução Prevista: " + dataDevolucaoPrevista + "\n" +
-               "Status: " + statusDevolucao;
+        String statusDevolucao = (dataDevolucaoReal == null) ? "✔ Empréstimo Ativo" : " 🗓 Devolvido em " + dataDevolucaoReal;
+        return "•✦ ────── Detalhes do Empréstimo  ────── ✦•\n" +
+               "🖊 Livro: " + livro.getTitulo() + " (ISBN: " + livro.getIsbn() + ")\n" +
+               "🖊 Usuário: " + usuario.getNome() + " (CPF: " + usuario.getCpf() + ")\n" +
+               "🖊 Data do Empréstimo: " + dataEmprestimo + "\n" +
+               "🖊 Data de Devolução Prevista: " + dataDevolucaoPrevista + "\n" +
+               "🖊 Status: " + statusDevolucao;
     }
 }
