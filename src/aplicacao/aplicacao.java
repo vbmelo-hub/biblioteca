@@ -50,7 +50,7 @@ public class Aplicacao {
                     menuEmprestimos(teclado, servicoEmprestimo, servicoLivro, servicoUsuario);
                     break;
                 case 0:
-                    System.out.println("\n❯❯❯❯ Você escolheu sair do sistema. ᶻ 𝗓 𐰁 \n❯❯❯❯ Até logo professor! >ᴗ<");
+                    System.out.println("\n\n❯❯❯❯ Você escolheu sair do sistema. ᶻ 𝗓 𐰁 \n❯❯❯❯ Até logo professor! >ᴗ<");
                     break;
                 default:
                     System.out.println("\n✘ Oh não! Opção inválida! •︵• ✘\n"
@@ -112,7 +112,7 @@ public class Aplicacao {
                     String isbnConsulta = teclado.nextLine();
                     Livro livroConsultado = servicoLivro.consultarLivroPorIsbn(isbnConsulta);
                     if (livroConsultado != null) {
-                        System.out.println("\n✔ Livro Encontrado ✔\n" + livroConsultado);
+                        System.out.println("\n\n✔ Livro Encontrado ✔\n" + livroConsultado);
                     } else {
                         System.out.println("\n✘ Livro com ISBN " + isbnConsulta + " não encontrado. ✘");
                     }
@@ -185,9 +185,9 @@ public class Aplicacao {
                     String cpfConsulta = teclado.nextLine();
                     Usuario usuarioConsultado = servicoUsuario.consultarUsuarioPorCpf(cpfConsulta);
                     if (usuarioConsultado != null) {
-                        System.out.println("✔ Usuário Encontrado ✔\n" + usuarioConsultado);
+                        System.out.println("\n\n✔ Usuário Encontrado ✔\n" + usuarioConsultado);
                     } else {
-                        System.out.println("✘ Usuário com CPF " + cpfConsulta + " não encontrado. ✘");
+                        System.out.println("\n\n✘ Usuário com CPF " + cpfConsulta + " não encontrado. ✘");
                     }
                     break;
                     

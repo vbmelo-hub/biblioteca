@@ -7,11 +7,11 @@ public class ServicoLivro {
 
     public String cadastrarLivro(String titulo, String autor, String isbn, int anoPublicacao, String editora, int quantidadeExemplares) {
         if (BDSimulado.getLivros().containsKey(isbn)) {
-            return "✘ Erro: Livro com ISBN " + isbn + " já cadastrado. ✘";
+            return "\n\n✘ Erro: Livro com ISBN " + isbn + " já cadastrado. ✘\n";
         }
         Livro novoLivro = new Livro(titulo, autor, isbn, anoPublicacao, editora, quantidadeExemplares);
         BDSimulado.addLivro(isbn, novoLivro);
-        return "\n✔ Livro cadastrado com sucesso! [ISBN: " + isbn + "] ✔";
+        return "\n\n✔ Livro cadastrado com sucesso! [ISBN: " + isbn + "] ✔\n";
     }
 
     public Livro consultarLivroPorIsbn(String isbn) {
@@ -20,33 +20,33 @@ public class ServicoLivro {
 
     public String listarTodosLivros() {
         if (BDSimulado.getLivros().isEmpty()) {
-            return "✘ Nenhum livro cadastrado. ✘";
+            return "\n\n✘ Nenhum livro cadastrado. ✘\n";
         }
-        String relatorio = "•✦ ────── Lista de Livros ────── ✦•\n";
+        String relatorio = "\n\n•✦ ────── Lista de Livros ────── ✦•\n";
         for (Livro livro : BDSimulado.getLivros().values()) {
-            relatorio = relatorio + livro.toString() + "\n────────────────────────────────────\n";
+            relatorio = relatorio + livro.toString() + "\n•✦ ────────────────────────────── ✦•\n";
         }
         return relatorio;
     }
 
     public String removerLivro(String isbn) {
         if (BDSimulado.removerLivro(isbn)) {
-            return "✔ Livro com ISBN " + isbn + " removido com sucesso. ✔";
+            return "\n\n✔ Livro com ISBN " + isbn + " removido com sucesso. ✔\n";
         }
-        return "✘ Erro: Livro com ISBN " + isbn + " não encontrado. ✘";
+        return "\n\n✘ Erro: Livro com ISBN " + isbn + " não encontrado. ✘\n";
     }
 
     public String buscarLivrosPorAutor(String autor) {
-        String resultado = "•✦ ────── Livros do Autor: " + autor + " ────── ✦•\n";
+        String resultado = "\n\n•✦ ────── Livros do Autor: " + autor + " ────── ✦•\n";
         boolean encontrado = false;
         for (Livro livro : BDSimulado.getLivros().values()) {
             if (livro.getAutor().equalsIgnoreCase(autor)) {
-                resultado = resultado + livro.toString() + "\n────────────────────────────────────\n";
+                resultado = resultado + livro.toString() + "\n";
                 encontrado = true;
             }
         }
         if (!encontrado) {
-            return "✘ Nenhum livro encontrado para o autor: " + autor + " ✘";
+            return "\n\n✘ Nenhum livro encontrado para o autor: " + autor + " ✘\n";
         }
         return resultado;
     }

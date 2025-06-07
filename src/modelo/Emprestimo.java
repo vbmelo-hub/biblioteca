@@ -61,11 +61,11 @@ public class Emprestimo {
     public String toString() 
     {
         String statusDevolucao = (dataDevolucaoReal == null) ? "✔ Empréstimo Ativo" : " 🗓 Devolvido em " + dataDevolucaoReal;
-        return "•✦ ────── Detalhes do Empréstimo  ────── ✦•\n" +
+        return "•✦ ────── Detalhes do Empréstimo  ────── ✦•\n\n" +
                "🖊 Livro: " + livro.getTitulo() + " (ISBN: " + livro.getIsbn() + ")\n" +
                "🖊 Usuário: " + usuario.getNome() + " (CPF: " + usuario.getCpf() + ")\n" +
                "🖊 Data do Empréstimo: " + dataEmprestimo + "\n" +
                "🖊 Data de Devolução Prevista: " + dataDevolucaoPrevista + "\n" +
-               "🖊 Status: " + statusDevolucao;
+               "🖊 Status: " + statusDevolucao + "\n";
     }
 }

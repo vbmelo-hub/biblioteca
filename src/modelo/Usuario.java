@@ -35,6 +35,6 @@ public class Usuario {
     {
         return "🧍 Nome: " + nome 
                + "\n🧍 CPF: " + cpf 
-               + "\n🧍 E-mail: " + email;
+               + "\n🧍 E-mail: " + email + "\n";
     }
 }

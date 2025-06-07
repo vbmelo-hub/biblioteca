@@ -75,6 +75,6 @@ public class Livro {
                + "\n🕮 Ano: " + anoPublicacao 
                + "\n🕮 Editora: " + editora 
                + "\n🕮 Total de exemplares: " + quantidadeExemplares 
-               + "\n🕮 Exemplares disponíveis: " + exemplaresDisponiveis;
+               + "\n🕮 Exemplares disponíveis: " + exemplaresDisponiveis + "\n";
     }
 }
