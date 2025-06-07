@@ -1,7 +1,8 @@
 # 📚 Gerenciador de Biblioteca - Terceira Avaliação da Nota 1
 
 **Disciplina:** Orientação a Objetos  
-**Professor:** Jonas Pontes  
+**Doscente:** Jonas Pontes  
+**Discentes:** Giovanna Souza Correia - Vinícius Barros de Melo
 **Data de Entrega:** 04/06/2025  
 
 Este projeto é parte da terceira avaliação da Nota 1 da disciplina de Orientação a Objetos, com o objetivo de aplicar os conceitos estudados em sala no desenvolvimento de uma aplicação Java orientada a objetos para o gerenciamento de uma biblioteca.
